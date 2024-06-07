@@ -9,19 +9,3 @@ services:
     volumes:
       - .:/var/www/html
     image: farisc0de/uploady:latest
-    depends_on:
-      - db
-
-  db:
-    image: mysql:latest
-    restart: always
-    environment:
-      MYSQL_DATABASE: "uploady"
-      MYSQL_USER: "uploady"
-      MYSQL_PASSWORD: "uploady"
-      MYSQL_ROOT_PASSWORD: "uploady"
-    volumes:
-      - mysql_data:/var/lib/mysql
-
-volumes:
-  mysql_data:
