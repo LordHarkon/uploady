@@ -8,4 +8,3 @@ services:
       - 99:80
     volumes:
       - .:/var/www/html
-    image: farisc0de/uploady:latest
