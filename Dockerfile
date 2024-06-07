@@ -2,6 +2,8 @@ FROM php:apache
 
 RUN docker-php-ext-install pdo pdo_mysql mysqli && docker-php-ext-enable mysqli
 
+RUN mkdir -p /var/www/html
+
 COPY . /var/www/html
 
 RUN chmod 755 -R /var/www/html/
