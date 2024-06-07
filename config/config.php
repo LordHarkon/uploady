@@ -1,10 +1,10 @@
 <?php
 
 // Database Settings
-define("DB_HOST", "db");
-define("DB_USER", "uploady");
-define("DB_PASS", "uploady");
-define("DB_NAME", "uploady");
+define("DB_HOST", getenv("DB_HOST") ?: "db");
+define("DB_USER", getenv("DB_USER") ?: "uploady");
+define("DB_PASS", getenv("DB_PASS") ?: "uploady");
+define("DB_NAME", getenv("DB_NAME") ?: "uploady");
 
 // Application Settings
 define("SITE_URL", "http://localhost");
